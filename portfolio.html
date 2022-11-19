@@ -15,46 +15,48 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="header">
       <div class="container">
-        <nav class="main-nav">
-          <a class="logo" href="#"
-            ><span class="web">Web</span><span class="studio">Studio</span>
+        <nav class="nav-logo">
+          <a class="nav-logo__link" href="#"
+            ><span class="nav-logo__start">Web</span
+            ><span class="nav-logo__end">Studio</span>
           </a>
-          <ul class="site-nav list">
-            <li class="header-item">
-              <a href="./index.html" class="header-link">Студія</a>
+          <ul class="site-nav__list list">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Студія</a>
             </li>
-            <li class="header-item">
-              <a href="./portfolio.html" class="header-link current"
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link current"
                 >Портфоліо</a
               >
             </li>
-            <li class="header-item">
-              <a href="" class="header-link">Контакти</a>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакти</a>
             </li>
           </ul>
-          <ul class="auth-nav list">
-            <li class="contacts-item">
+          <ul class="header-contact list">
+            <li class="header-contact__item">
               <a
-                class="contacts-link"
+                class="header-contact__link"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 href="mailto:info@devstudio.com"
               >
-                <svg class="contacts-icon" width="16" height="12">
+                <svg class="header-contact__icon" width="16" height="12">
                   <use href="./images/icons.svg#envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
-            <li class="contacts-item">
-              <a href="+380961111111" class="contacts-link">
-                <svg class="contacts-icon" width="10" height="16">
+            <li class="header-contact__item">
+              <a href="+380961111111" class="header-contact__link">
+                <svg class="header-contact__icon" width="10" height="16">
                   <use href="./images/icons.svg#smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -301,31 +303,34 @@
     <footer class="footer">
       <div class="container footer-bot">
         <div class="footer-one">
-          <a class="logotip" href="#"
-            ><span class="web">Web</span><span class="studio">Studio</span>
+          <a class="footer-logo" href="#"
+            ><span class="footer-logo__start">Web</span
+            ><span class="footer-logo__end">Studio</span>
           </a>
           <address>
-            <ul class="footer-content list">
-              <li>
+            <ul class="footer-contact list">
+              <li class="footer-contact__item">
                 <a
-                  class="adress"
+                  class="footer-contact__adress"
                   href="https://goo.gl/maps/mE2myTLGrEtwMsD1A"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="contacts">
+              <li class="footer-contact__item">
                 <a
-                  class="link"
+                  class="footer-contact__link"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="contacts">
-                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="footer-contact__item">
+                <a class="footer-contact__link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
