@@ -1,14 +1,14 @@
 //  utils styles
 @import "./utils/variables";
 @import "./utils/v-hidden";
+@import "./utils/placeholder";
 
 //  base styles
 @import "./base/base";
 @import "./base/reset";
 
 //  components styles
-@import "./components/contaoner";
-@import "./components/section";
+@import "./components/container";
 @import "./components/header-logo";
 @import "./components/navigation";
 @import "./components/header";

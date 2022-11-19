@@ -8,6 +8,8 @@
 }
 
 .socials-bottom {
+  @extend %list;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,10 +29,10 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.socials-icon-bot {
-  fill: var(--white-color);
+  & {
+    fill: var(--white-color);
+  }
 }
 
 .socials-link-bot:hover {

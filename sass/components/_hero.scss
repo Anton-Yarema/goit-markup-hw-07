@@ -48,8 +48,8 @@
   border-radius: 4px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
 
-.hero__btn.hero__btn--active:active {
-  background-color: #188ce8;
+  &--active:active {
+    background-color: #188ce8;
+  }
 }

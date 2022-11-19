@@ -1,3 +1,11 @@
+.features {
+  @extend %section;
+}
+
+.features__list {
+  @extend %list;
+}
+
 .features__list {
   display: flex;
   flex-wrap: wrap;

@@ -25,6 +25,10 @@
   color: var(--accent-color);
 }
 
+.footer-contact {
+  @extend %list;
+}
+
 .footer-logo__end {
   color: var(--white-color);
 }
@@ -38,29 +42,29 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-contact__adress:hover,
-.footer-contact__adress:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-contact__item {
   margin-top: 9px;
-}
 
-.footer-contact__item:first-child {
-  margin-top: 0;
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .footer-contact__link {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
-}
 
-.footer-contact__link:hover,
-.footer-contact__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-bot {

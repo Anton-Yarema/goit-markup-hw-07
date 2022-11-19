@@ -24,6 +24,16 @@
   overflow: hidden;
 }
 
+.section-work, .clients, .team, .services, .features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.work-samples, .btn-block, .socials-bottom, .footer-contact, .clients__list, .team__list, .services__list, .features__list, .header-contact, .site-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -48,11 +58,6 @@ p {
   margin: 0;
 }
 
-.list {
-  margin: 0;
-  padding: 0;
-}
-
 img {
   display: block;
 }
@@ -71,11 +76,6 @@ a {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .nav-logo {
@@ -141,8 +141,14 @@ a {
 .site-nav__link:focus {
   color: var(--accent-color);
 }
+.site-nav__link:hover::after,
+.site-nav__link:focus::after {
+  opacity: 1;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
 
-.site-nav__link.current {
+.site-nav__link--current {
   color: var(--accent-color);
 }
 
@@ -165,9 +171,7 @@ a {
   transition: opacity 250ms ease-in, transform 250ms ease-in, -webkit-transform 250ms ease-in;
 }
 
-.site-nav__link.current::after,
-.site-nav__link:hover::after,
-.site-nav__link:focus::after {
+.site-nav__link--current::after {
   opacity: 1;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
@@ -192,12 +196,6 @@ a {
   margin-left: 30px;
 }
 
-.header-contact__link:hover,
-.header-contact__link:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
 .header-contact__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -214,6 +212,10 @@ a {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-contact__link:hover, .header-contact__link:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .header-contact__icon {
@@ -281,7 +283,7 @@ a {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.hero__btn.hero__btn--active:active {
+.hero__btn--active:active {
   background-color: #188ce8;
 }
 

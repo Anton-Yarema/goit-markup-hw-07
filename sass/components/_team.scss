@@ -1,4 +1,6 @@
 .team {
+  @extend %section;
+
   background-color: var(--secondary-bgc-color);
 }
 
@@ -13,6 +15,8 @@
 }
 
 .team__list {
+  @extend %list;
+
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -68,12 +72,12 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.socials__link:hover,
-.socials__link:active {
-  background-color: var(--accent-color);
-  color: var(--white-color);
+  &:hover,
+  &:active {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+  }
 }
 
 .socials__icon {
